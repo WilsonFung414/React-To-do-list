@@ -1,0 +1,86 @@
+#root{
+    width: 90%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(253, 240, 219);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.edit-form, .create-form{
+    height: 40px;
+    width: 100%;
+    margin: 25px 0px;
+    border: 1px solid rgb(253, 223, 178);
+    display: flex;
+}
+
+.edit-form > input, .create-form > input {
+    outline: none;
+    border:none;
+    background: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.edit-form > button, .create-form > button {
+    border: none;
+    background-color: rgb(253, 223, 178);
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.todo {
+    background-color: rgb(253, 245, 232);
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.alert-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
